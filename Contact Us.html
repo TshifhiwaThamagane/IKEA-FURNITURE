@@ -27,7 +27,7 @@
         }
         nav {
             background-color: black;
-            padding: 20px 0;
+            padding: 30px 0;
         }
         nav ul {
             list-style: none;
@@ -87,14 +87,14 @@
 </head>
 <body>
     <header>
-        <h1>EXCLUSIVE FURNITURE</h1>
+        <h1>IKEA FURNITURES</h1>
         <p>Come get your finest and exclusive furniture with us!</p>
     </header>
    <!-- Contact Us Page -->
    <nav>
     <ul>
-        <li><a href="Homepage.html">View</a></li>
-        <li><a href="Contact Us.html">Contact Us</a></li>
+        <li><b><a href="Homepage.html.html">View</a></b></li>
+        <li><b><a href="Contact Us.html">Contact Us</a></b></li>
     </ul>
     </nav>
 
@@ -103,7 +103,7 @@
 
     <body><video autoplay muted loop id="myVideo" height="855">
         <source src="furniture.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+       
       </video>
       <div class="content">
         
@@ -113,16 +113,15 @@
 	<center>
         <div id="error"></div>
      <div class="content" id="contact">
-        <h1 style="color:rgb(255, 255, 255);">Contact Us Today!</h1>
-        <h2 ><B>We are AVAILABILE 24/7!</h2></b>
-        <p style="color:white"><B>SO DO NOT HASITATE AND FOLLOW YOUR HEART AND STYLE!</p></B>
-         
+       
+        <font color ="white"><marquee><b>WE ARE AVAILABILE 24/7</h2></b></marquee></font>
         <!--Google Form-->
 
-        <h1>Contact Us below to an appointment !</h1>
+        <h1>Please fill in the form if you're interested with our exclusive furniture</h1>
+        <font color="white"><h3>Please note that after you submit the form you will be directed to our email where your order will be seen and captured</h3></font>
         <div class = "SUBMITING">
             <div id="error"></div>
-             <form id ="form" action ="mailto:austinthamagane1@gmail.com" method="post">
+             <form id ="form" action ="mailto:vladimir.dyulgerov@gmail.com " method="post">
          
                  <div>
                      
@@ -130,6 +129,15 @@
                        <center><input type = "text" id = "fname" name="fname" placeholder="Your name" required></center>
                  </div>
                  <br>
+
+
+
+                 <div>
+                     
+                    <center><b><font color="white"><label for ="telephone"> <b>Cellphone number:</b></font></label></b></center>
+                    <center><input type = "text" id = "telephone" name="telephone" placeholder="Your cellphone number" required></center>
+              </div>
+              <br>
                  <div>
                      <center><label for ="email"> <b><font color="white">Email:</b></font></label></center>
                      <center><input type = "text" id = "email" name="email" placeholder="Your email" required></center>
@@ -138,24 +146,24 @@
                  
                  <br>
                  <div>
-                     <center> <label for ="message" > <b><font color="white">Your message:</b></font></label></center>
-                     <center><input type = "text" id = "message" name="enquiries" placeholder="Message us the product you're interested in"></center>
+                     <center> <label for ="message" > <b><font color="white">Product you're interested in:</b></font></label></center>
+                     <center><input type = "message" id = "message" name="enquiries" placeholder="Type in product"
                      </div>
-                     <center><input type ="reset"></center>
-                     <center><button type="submit">Send</button></center>
+                     
+                     <center><input type = "reset"></center>
+                     <center><button type="submit" onSubmit={handleSubmit}>Send</button></center>
            </form>
          </div>
 
-         <h1>OR</h1>
-         <h2>Email Vladmir Dyulgerov at vladmir.dyulgerov@gmail.com
-         OR Contact Vladmir Dyulgerob on 081 300 2301</h2>
+         
+         <h2>Email Vladmir Dyulgerov at vladmir.dyulgerov@gmail.com OR Contact Vladmir Dyulgerov on 081 300 2301</h2>
 	 </center>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 EXCLUSIVE FURNITURE| All Rights Reserved</p>
+        <p>&copy; 2025 IKEA FURNITURES| All Rights Reserved</p>
         <p><a href="Contact Us.html">Back to top</a></p>
-        <p><a href="Homepage.html">View Again</a></p>
+        <p><a href="Homepage.html.html">View Again</a></p>
     </footer>
    </body>
 </html>
