@@ -125,38 +125,37 @@
         <font color="white"><h3>Please note that after you submit the form you will be directed to our services </h3></font>
         <div class = "SUBMITING">
             <div id="error"></div>
-             <form id ="form" action ="mailto:austinthamagane1@gmail.com" method="post">
-         
-                 <div>
-                     
-                       <center><b><font color="white"><label for ="fname"> <b>First name:</b></font></label></b></center>
-                       <center><input type = "text" id = "fname" name="fname" autocomplete="fname" placeholder="Your name" required></center>
-                 </div>
-                 <br>
 
+		
+            <form id="form" action="mailto:austinthamagane1@gmail.com" method="post" enctype="text/plain">
+    <div>
+        <label for="fname"><b>First name:</b></label>
+        <input type="text" id="fname" name="First Name" placeholder="Your name" required>
+    </div>
+    <br>
 
+    <div>
+        <label for="telephone"><b>Cellphone number:</b></label>
+        <input type="text" id="telephone" name="Cellphone Number" placeholder="Your cellphone number" required>
+    </div>
+    <br>
 
-                 <div>
-                     
-                    <center><b><font color="white"><label for ="telephone"> <b>Cellphone number:</b></font></label></b></center>
-                    <center><input type = "text" id = "telephone" name="telephone"  autocomplete="telephone"placeholder="Your cellphone number" required></center>
-              </div>
-              <br>
-                 <div>
-                     <center><label for ="email"> <b><font color="white">Email:</b></font></label></center>
-                     <center><input type = "text" id = "email" name="email"  autocomplete="email"placeholder="Your email" required></center>
-                 </div>
-                 
-                 
-                 <br>
-                 <div>
-                     <center> <label for ="message" > <b><font color="white">Product you're interested in:</b></font></label></center>
-                     <center><input type = "message" id = "message" name="enquiries" placeholder="Type in product">
-                     </div>
-                     
-                     <center><input type = "reset"></center>
-                     <center><button type="submit" onSubmit={handleSubmit}>Send</button></center>
-           </form>
+    <div>
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="Email" placeholder="Your email" required>
+    </div>
+    <br>
+
+    <div>
+        <label for="message"><b>Product you're interested in:</b></label>
+        <input type="text" id="message" name="Product Interest" placeholder="Type in product">
+    </div>
+    <br>
+
+    <input type="reset">
+    <button type="submit">Send</button>
+</form>
+
          </div>
 
          
